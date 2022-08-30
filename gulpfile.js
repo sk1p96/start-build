@@ -15,7 +15,6 @@ global.app = {
 };
 
 // Импорт задачи copy
-import { copy } from "./gulp/task/copy.js";
 import { reset } from "./gulp/task/reset.js";
 import { html } from "./gulp/task/html.js";
 import { server } from "./gulp/task/server.js";
@@ -27,7 +26,6 @@ import { svgSprive } from "./gulp/task/svgSprive.js";
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
-    gulp.watch(path.watch.files, copy);
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.sass, sass);
     gulp.watch(path.watch.js, js);
@@ -40,7 +38,7 @@ export { svgSprive };
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Параллельное выполнение copy и html
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, sass, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(html, sass, js, images));
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

@@ -14,7 +14,6 @@ export const path = {
         html: `${buildFolder}/`,
         images: `${buildFolder}/img/`,
         fonts: `${buildFolder}/fonts/`,
-        files: `${buildFolder}/files/`, // Путь к папке с результатами
     },
     src: {
         js: `${srcFolder}/js/app.js`,
@@ -22,15 +21,13 @@ export const path = {
         svg: `${srcFolder}/img/**/*.svg`,
         sass: `${srcFolder}/sass/style.sass`,
         html: `${srcFolder}/*.pug`, // Смотрим на файлы, которые находятся в корне
-        files: `${srcFolder}/files/**/*.*`, // Путь к папке с файлами, которую копируем
         svgicons: `${srcFolder}/svgicons/*.svg`,
     },
     watch: {
         js: `${srcFolder}/js/**/*.js`, // Все файлы
-        sass: `${srcFolder}/sass/**/*.sass`, // Все файлы 
+        sass: `${srcFolder}/**/*.sass`, // Все файлы 
         html: `${srcFolder}/**/*.pug`, // Все файлы (в корне, в других папках)
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,ico,svg}`,
-        files: `${srcFolder}/files/**/*.*` // Путь к папке с файлами, которую копируем
     },
     clean: buildFolder,
     buildFolder: buildFolder,
