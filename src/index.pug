@@ -1,11 +1,11 @@
 html 
     head 
         link(href="css/style.min.css")
-        include html/head
+        include blocks/head
     body
-        include html/header
-        main.page 
-            h2 main
-            img(src="@img/image.jpg")
-        include html/footer
+        include blocks/header/header
+
+        h2 Блоки
+
+        include blocks/footer/footer
         script(src="js/app.min.js")

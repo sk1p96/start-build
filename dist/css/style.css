@@ -30,17 +30,17 @@
   font-style: normal;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: green;
+html,
+body,
+ul,
+li,
+p,
+div,
+form {
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 768px) {
-  body {
-    background-color: red;
-  }
-
-  h2 {
-    color: #fff;
-  }
+body {
+  font-family: "Roboto", sans-serif;
 }
