@@ -1,7 +1,11 @@
 
-<html> 
-  <head> 
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/style.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <head>
       <meta charset="UTF-8"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -14,13 +18,122 @@
     </head>
   </head>
   <body>
-    <div class="header"> 
-      <h2>header</h2>
+    <div class="header">
+      <div class="header__topbar wrapper">
+        <div class="logo"><a href="#"><img class="logo__img" src="img/logo_strana.png"/></a></div>
+        <div class="nav">
+          <ul>
+            <li> <a class="nav__link custom-text" href="#">О нас</a></li>
+            <li> <a class="nav__link custom-text" href="#">В команду</a></li>
+            <li> <a class="nav__link custom-text" href="#">Направления</a></li>
+            <li><a class="nav__link button-accent button-accent_header custom-text" href="#">Связаться</a></li>
+            <li class="basdasd"><a class="nav__link custom-text burger-menu" href="#"><span>toggle</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar">
+          <ul class="sidebar__link">
+            <li><a class="nav__link custom-text" href="">Пункт 1</a></li>
+            <li><a class="nav__link custom-text" href="">Пункт 2</a></li>
+            <li><a class="nav__link custom-text" href="">Пункт 3</a></li>
+            <li><a class="nav__link custom-text" href="">Пункт 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__preview wrapper">
+        <div class="header__preview__text mouse-parallax">
+          <h1 class="large-header mouse-parallax-bg wow animate__animated animate__fadeInLeft">Далеко-далеко за словесными горами</h1>
+          <p class="custom-text custom-text_header wow animate__animated animate__fadeInLeft">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд пояс он первую путь рукопись маленький приставка прямо точках?</p>
+          <div class="button-block wow animate__animated animate__fadeInLeft">
+            <button class="button button-accent custom-text">Подробнее</button>
+            <button class="button button_next custom-text">
+              Подробнее<svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg>
+            </button>
+          </div>
+        </div>
+        <div class="header__preview__img"> <img class="img wow animate__animated animate__fadeInRight" src="img/svg/welcome2.svg"/></div>
+      </div>
     </div>
-    <h2>Блоки</h2>
-    <footer> 
-      <h2>footer</h2>
+    <div class="benefits wrapper">
+      <div class="benefits__small-header">О нас</div>
+      <div class="benefits__text custom-text-large wow animate__animated animate__fadeInLeft"> Цифровые решения - это далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Прямо пояс, ты предупредила.</div>
+      <div class="benefits__block">
+        <div class="benefits__item wow animate__animated animate__fadeInUp"><span>150+</span>
+          <p class="custom-text">Далеко-далеко за словесными горами.</p>
+        </div>
+        <div class="benefits__item wow animate__animated animate__fadeInUp"><span>50%</span>
+          <p class="custom-text">Далеко-далеко за словесными горами.</p>
+        </div>
+        <div class="benefits__item wow animate__animated animate__fadeInUp"><span>60+</span>
+          <p class="custom-text">Далеко-далеко за словесными горами.</p>
+        </div>
+        <div class="benefits__item wow animate__animated animate__fadeInUp"><span>>6 </span>
+          <p class="custom-text">Далеко-далеко за словесными горами.</p>
+        </div>
+        <div class="benefits__item wow animate__animated animate__fadeInUp"><span>15+ </span>
+          <p class="custom-text">Далеко-далеко за словесными горами.</p>
+        </div>
+      </div>
+    </div>
+    <div class="team wrapper">
+      <div class="team__text">
+        <h1 class="custom-text-large wow animate__animated animate__fadeInUp">Давайте начнем работу над нашими проектами вместе</h1>
+        <p class="custom-text wow animate__animated animate__fadeInUp">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+        <button class="button button-accent wow animate__animated animate__fadeInUp">Написать нам</button>
+      </div>
+      <div class="team__img wow animate__animated animate__fadeInUp"><img src="img/svg/Discussion.svg"/></div>
+    </div>
+    <div class="wrapper">
+      <div class="directions-wrapper wow animate__animated animate__fadeInUp">
+        <div class="benefits__small-header">Наши направления</div>
+        <div class="directions"> 
+              <div class="accordion">
+                <div class="accordion__header"> 
+                  <h1>Далеко-далеко, за.</h1><svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+</svg>
+                </div>
+                <div class="accordion__body custom-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большого по всей парадигматическая великий курсивных если которое. Своих свою встретил коварных, дал живет алфавит рукопись парадигматическая языком, жизни инициал лучше!</div>
+              </div>
+              <div class="accordion">
+                <div class="accordion__header"> 
+                  <h1>Далеко-далеко, за.</h1><svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+</svg>
+                </div>
+                <div class="accordion__body custom-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большого по всей парадигматическая великий курсивных если которое. Своих свою встретил коварных, дал живет алфавит рукопись парадигматическая языком, жизни инициал лучше!</div>
+              </div>
+              <div class="accordion">
+                <div class="accordion__header"> 
+                  <h1>Далеко-далеко, за.</h1><svg class="accordion__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+</svg>
+                </div>
+                <div class="accordion__body custom-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Большого по всей парадигматическая великий курсивных если которое. Своих свою встретил коварных, дал живет алфавит рукопись парадигматическая языком, жизни инициал лучше!</div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer wrapper">
+      <div class="footer__logo-block custom-text">
+        <p>Цифровые решения</p>
+        <p>Далеко-далеко за словесными горами в стране гласных и согласных.</p>
+      </div>
+      <div class="footer__link-block"> 
+        <ul class="footer__list">
+          <li> <a class="footer__link custom-text custom-text" href="">Ссылка 1</a></li>
+          <li> <a class="footer__link custom-text custom-text" href="">Ссылка 2</a></li>
+          <li> <a class="footer__link custom-text custom-text" href="">Ссылка 3</a></li>
+          <li> <a class="footer__link custom-text custom-text" href="">Ссылка 4</a></li>
+        </ul>
+      </div>
+      <div class="footer__mail-block"> 
+        <p class="custom-text">Вопросы и предложения</p><a class="footer__link custom-text" href="mailto:test">strana@strana.ru</a>
+      </div>
     </footer>
-    <script src="js/app.min.js"></script>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.min.js"></script>
 </html>

@@ -1,2 +1,33 @@
-.header 
-    h2 header
+.header
+    .header__topbar.wrapper
+        .logo
+            a(href="#")
+                img(src="@img/logo_strana.png").logo__img
+        .nav
+            ul
+                li 
+                    a(href='#').nav__link.custom-text О нас
+                li 
+                    a(href='#').nav__link.custom-text В команду
+                li 
+                    a(href='#').nav__link.custom-text Направления
+                li
+                    a(href='#').nav__link.button-accent.button-accent_header.custom-text Связаться
+                li.basdasd
+                    a(href='#').nav__link.custom-text.burger-menu
+                        span toggle
+
+        //- include burger
+        include ../sidebar/sidebar
+    .header__preview.wrapper
+        .header__preview__text.mouse-parallax
+            h1.large-header.mouse-parallax-bg.wow.animate__animated.animate__fadeInLeft Далеко-далеко за словесными горами
+            p.custom-text.custom-text_header.wow.animate__animated.animate__fadeInLeft Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд пояс он первую путь рукопись маленький приставка прямо точках?
+            .button-block.wow.animate__animated.animate__fadeInLeft
+                button.button.button-accent.custom-text Подробнее
+                button.button.button_next.custom-text Подробнее
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+        .header__preview__img 
+            img(src="@img/svg/welcome2.svg").img.wow.animate__animated.animate__fadeInRight

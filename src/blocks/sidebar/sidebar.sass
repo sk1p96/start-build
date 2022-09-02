@@ -1,0 +1,114 @@
+// sidebar
+
+.sidebar
+    position: fixed
+    display: block
+    width: 100%
+    height: 100%
+    right: -100%
+    top: 70px
+    z-index: 1
+    background: $color-interaction
+    transition: right .3s .1s
+    &.active
+        right: 0
+        transition: right .3s
+    &__link
+        display: grid
+        list-style-type: none
+        justify-content: center
+        align-items: center
+        // height: 100%
+        margin-top: 40px
+        li
+            &:not(:last-child)
+                margin-bottom: 2.5em
+
+        a
+            color: $color-white
+            font-size: 4em
+
+.close-menu
+    transform: scale(0)
+    transition: transform .3s
+    &-active
+        transform: scale(1)
+        transition: transform .3s .3s
+.button
+    &-sidebar-close
+        color: $color-white
+
+.logo
+    &__img
+        &_sidebar
+            max-width: 220px
+
+@media (min-width: $lg)
+    .nav
+        ul
+            margin-right: 0
+            li
+                &:last-child
+                    display: none
+@media (max-width: $md)
+    .nav
+        ul
+            li
+                &:not(:last-child)
+                    display: none
+
+.burger-menu
+    // display: block
+    cursor: pointer
+    width: 30px
+    height: 30px
+    position: absolute
+    margin: 0
+    // right: 0
+    top: 15px
+    padding: 0
+    overflow: hidden
+    font-size: 0
+
+    & span
+        position: absolute
+        display: block
+        background-color: $color-text-light
+        height: 2px
+        width: 25px
+        top: 18px
+        left: 5px
+        right: 5px
+        transition: 0.5s
+        border-radius: 5px
+
+.burger-menu span::after,
+.burger-menu span::before
+    position: absolute
+    display: block
+    height: 2px
+    background-color: $color-text-light
+    content: ''
+    width: 100%
+    transition: .2s
+    border-radius: 5px
+
+.burger-menu span::after
+    top: -10px
+
+.burger-menu span::before
+    bottom: -10px
+
+.burger-menu.close span
+    background-color: transparent
+    transition: .2s
+
+    &::after
+        top: 0
+        transform: rotate(45deg)
+        transition: .2s
+
+    &::before
+        bottom: 0
+        transform: rotate(-45deg)
+        transition: .2s

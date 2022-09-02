@@ -1,12 +1,12 @@
 // Color vars
 
-$color-text: #1A1A1A
+$color-text: #090938
 $color-text-light: #5c5c5c
 $color-interaction: #012345
 $color-accent: #92278f
 $color-white: #FFFFFF
 $color-opacity: #ffffff09
-$color-gradient: linear-gradient(323.7deg,#92278f,#c6168d 57.99%,#ed1c24)
+$color-gradient: linear-gradient(323.7deg, #92278f 0%, #c6168d 57.99%, #ed1c24 100%)
 $color-bg: #f5f5f5
 $color-bg-light: #fafafa
 $color-bg-hover: #ececec
@@ -20,8 +20,15 @@ $lg: 1199px
 
 // vars
 
-$border: 7px
+$radius: 5px
 
-html, body, ul, li, p, div, form
+html, body, ul, li, p, div, form,h1
     margin: 0
     padding: 0
+
+$maxWidth: 1920
+
+@mixin adaptiv-font($pcSize, $mobSize)
+    $addSize: $pcSize - $mobSize
+    $maxWidth: $maxWidth - 320
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))

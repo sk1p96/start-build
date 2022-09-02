@@ -1,0 +1,35 @@
+.directions
+    background: #f4f4f4
+    padding: 80px 50px
+    border-radius: 20px
+    &-wrapper
+        margin-top: 150px
+.accordion
+    border-bottom: 1px solid rgba($color-text, 1)
+    margin-top: 25px
+    &:first-child
+        border-top: 1px solid rgba($color-text, 1)
+        padding-top: 20px
+    &__icon
+        transition: transform 0.3s ease-in-out
+    &.active .accordion__icon
+        transform: rotate(-180deg)
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+        font-size: 20px
+        color: rgba($color-text, 1)
+        transition: transform 0.3s ease-in-out
+
+        h1
+            font-weight: 400 !important
+            transition: transform 0.3s ease-in-out
+    &__body
+        max-height: 0
+        overflow: hidden
+        transition: all 0.3s ease-in-out
+        margin: 5px 0 15px 0
+        line-height: 1.5em
+        opacity: .7

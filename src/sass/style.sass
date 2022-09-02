@@ -2,6 +2,107 @@
 @import 'vars'
 @import '../blocks/header/header'
 @import '../blocks/footer/footer'
+@import '../blocks/sidebar/sidebar'
+@import '../blocks/directions/directions'
+@import '../blocks/benefits/benefits'
+@import '../blocks/contacts/contacts'
+@import '../blocks/team/team'
 
 body
     font-family: 'Roboto', sans-serif
+    overflow-x: hidden
+    &.no-scroll
+        overflow: hidden
+
+.overlay
+    background: rgba($color-text, .6)
+    position: absolute
+    height: 100%
+    width: 100%
+
+.img
+    width: 100%
+
+.wrapper
+    padding: 0 10%
+    margin: 0 auto
+
+.no-wrapper
+    padding: 0
+
+@media (max-width: $sm)
+    .wrapper
+        padding: 0 10px
+// Big header
+
+.large-header
+    color: #090938
+    // font-size: 8em !important
+    @include adaptiv-font(128, 45)
+    line-height: 0.95
+    font-weight: 500
+
+.custom-text-large
+    color: $color-text
+    font-size: 42px
+    line-height: 1.2
+    font-weight: 400
+
+.button
+    border: none
+    background: none
+    cursor: pointer
+
+.button
+    // accent button
+    &-accent
+        background: $color-accent !important
+        padding: 15px 50px
+        border-radius: $radius
+        color: $color-white
+        transition: .1s linear
+        font-weight: 500
+        align-items: center
+        transition: all .4s ease-in-out
+        svg
+            align-items: center
+            // position: absolute
+        &:hover
+            transition: .1s linear
+            background-position: 100% 0
+            transition: all .4s ease-in-out
+            box-shadow: 0 1px 20px 0 #92278f86
+
+    // transparent button with arrow
+    &_next
+        display: flex
+        align-items: center
+        transition: .2s
+        svg
+            margin-left: 8px
+            transition: .2s
+        &:hover
+            transition: .2s
+            color: $color-accent
+            svg
+                margin-left: 12px
+                transition: .2s
+
+// Scroll bar
+
+::-webkit-scrollbar
+    width: 10px
+
+@media (max-width: $sm)
+    ::-webkit-scrollbar
+        width: 0
+
+::-webkit-scrollbar-track
+    background-color: $color-bg-hover
+    border-radius: 80px
+
+::-webkit-scrollbar-thumb
+    border-radius: 80px
+    height: 50px
+    background-color: $color-accent
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5)

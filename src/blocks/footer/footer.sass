@@ -1,0 +1,41 @@
+.footer
+    display: flex
+    gap: 20%
+    // background: $color-text
+    // color: $color-white
+    height: 15rem
+    padding-top: 50px !important
+    margin-top: 150px !important
+    @media (max-width: $md)
+        display: block
+        div
+            margin-bottom: 20px
+    &__link
+        // color: $color-white
+        text-decoration: none
+        &:hover
+            color: $color-accent
+            transition: .2s
+    &__list
+        list-style-type: none
+        line-height: 2em
+    &__logo-block
+        font-weight: bold
+        font-size: 2.5em
+        p
+            &:last-child
+                font-size: 14px
+                font-weight: normal
+                opacity: .5
+                margin-top: 10px
+                width: 50%
+    &__mail-block
+        p
+            color: rgba($color-text , .5)
+        a
+            font-size: 2.5em
+            font-weight: bold
+            transition: .2s
+            &:hover
+                color: $color-accent
+                transition: .2s
